@@ -158,7 +158,7 @@ CREATE TABLE `estabelecimento` (
   `estab_end` varchar(50) DEFAULT NULL,
   `estab_tel` varchar(50) DEFAULT NULL,
   `estab_aval` int(11) DEFAULT NULL,
-  `estab_datareg` timestamp NOT NULL DEFAULT current_timestamp(),
+ `estab_datareg` date NOT NULL,
   `estab_ultimaalt` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
